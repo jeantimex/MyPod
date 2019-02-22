@@ -16,6 +16,7 @@
 		1A6B161A221FC61A002BA5C4 /* MyPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6B1613221FC61A002BA5C4 /* MyPod.framework */; };
 		1A6B161B221FC61A002BA5C4 /* MyPod.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6B1613221FC61A002BA5C4 /* MyPod.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1A6B1621221FC8F0002BA5C4 /* MyPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A6B1620221FC8F0002BA5C4 /* MyPod.h */; };
+		1A6B1624221FC9BB002BA5C4 /* MyPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B1623221FC9BB002BA5C4 /* MyPod.swift */; };
 		DC31DF27EA8095B1A151D78A /* Pods_MyPodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5987CFD7249A325124C5D8 /* Pods_MyPodTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		1A6B1613221FC61A002BA5C4 /* MyPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6B1616221FC61A002BA5C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A6B1620221FC8F0002BA5C4 /* MyPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPod.h; sourceTree = "<group>"; };
+		1A6B1623221FC9BB002BA5C4 /* MyPod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPod.swift; sourceTree = "<group>"; };
 		9A5987CFD7249A325124C5D8 /* Pods_MyPodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D3288782AF12CEAFE0ED05 /* Pods-MyPodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPodTests.debug.xcconfig"; path = "Target Support Files/Pods-MyPodTests/Pods-MyPodTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,10 +147,19 @@
 		1A6B1614221FC61A002BA5C4 /* MyPod */ = {
 			isa = PBXGroup;
 			children = (
+				1A6B1622221FC9BA002BA5C4 /* Classes */,
 				1A6B1620221FC8F0002BA5C4 /* MyPod.h */,
 				1A6B1616221FC61A002BA5C4 /* Info.plist */,
 			);
 			path = MyPod;
+			sourceTree = "<group>";
+		};
+		1A6B1622221FC9BA002BA5C4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1A6B1623221FC9BB002BA5C4 /* MyPod.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		B7CF7044F213D4600FEE26A4 /* Frameworks */ = {
@@ -367,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6B1624221FC9BB002BA5C4 /* MyPod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +567,7 @@
 		1A6B160B221FC26F002BA5C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -627,6 +640,7 @@
 		1A6B160C221FC26F002BA5C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
